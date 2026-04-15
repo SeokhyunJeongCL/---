@@ -399,17 +399,17 @@
     background: var(--brand);
     color: #fff;
     border-radius: 50%;
-    width: 38px;
-    height: 38px;
-    font-size: 19px;
+    width: 22px;
+    height: 22px;
+    font-size: 13px;
     font-weight: 800;
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 30;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.4);
-    border: 2px solid #fff;
-    right: -19px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.35);
+    border: 1.5px solid #fff;
+    right: -11px;
     pointer-events: none;
     line-height: 1;
   }
@@ -1354,7 +1354,7 @@
                 <div style="border-bottom:1px solid var(--gray-lt); padding:5px 0; flex-shrink:0;">
                   <div style="display:flex; align-items:center; gap:4px; margin-bottom:2px;">
                     <span class="state-badge lost" style="font-size:6.5px; padding:1px 4px;">분실물</span>
-                    <span class="state-badge looking" style="font-size:6.5px; padding:1px 4px;">찾는중</span>
+                    
                   </div>
                   <div style="font-size:8.5px; font-weight:600; color:var(--navy); overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">1층 로비 검정 우산 찾아요</div>
                   <div style="font-size:7px; color:var(--gray-md); margin-top:1px;">박샌디 · 3시간 전 · 댓글 2 · 조회 89</div>
@@ -1383,13 +1383,13 @@
                 <div class="wf-bnav-item"><div class="wf-bnav-icon active"></div><span class="wf-bnav-label active" style="font-size:5.5px;">건물톡</span></div>
               </div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
+              <span class="wf-num-label" style="top:90px;">①</span>
 
-              <span class="wf-num-label" style="top:225px;">②</span>
+              <span class="wf-num-label" style="top:168px;">③</span>
 
-              <span class="wf-num-label" style="top:354px;">③</span>
+              <span class="wf-num-label" style="top:230px;">②</span>
 
-              <span class="wf-num-label" style="top:484px;">④</span>
+              <span class="wf-num-label" style="top:436px;">④</span>
 
           </div>
 
@@ -1441,7 +1441,7 @@
                 <div style="border-bottom:1px solid var(--gray-lt); padding:5px 0; flex-shrink:0;">
                   <div style="display:flex; align-items:center; gap:4px; margin-bottom:2px;">
                     <span class="state-badge lost" style="font-size:6.5px; padding:1px 4px;">분실물</span>
-                    <span class="state-badge looking" style="font-size:6.5px; padding:1px 4px;">찾는중</span>
+                    
                   </div>
                   <div style="font-size:8.5px; font-weight:600; color:var(--navy); overflow:hidden; text-overflow:ellipsis; white-space:nowrap;">1층 로비 검정 우산 찾아요</div>
                   <div style="font-size:7px; color:var(--gray-md); margin-top:1px;">박샌디 · 3시간 전 · 댓글 2 · 조회 89</div>
@@ -1470,14 +1470,6 @@
                 <div class="wf-bnav-item"><div class="wf-bnav-icon active"></div><span class="wf-bnav-label active" style="font-size:5.5px;">건물톡</span></div>
               </div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
-
-              <span class="wf-num-label" style="top:225px;">②</span>
-
-              <span class="wf-num-label" style="top:354px;">③</span>
-
-              <span class="wf-num-label" style="top:484px;">④</span>
-
           </div>
 
           <!-- ─── S03: 카테고리 탭 전환 (건물공지 탭 선택) ─── -->
@@ -1542,14 +1534,6 @@
                 <div class="wf-bnav-item"><div class="wf-bnav-icon active"></div><span class="wf-bnav-label active" style="font-size:5.5px;">건물톡</span></div>
               </div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
-
-              <span class="wf-num-label" style="top:225px;">②</span>
-
-              <span class="wf-num-label" style="top:354px;">③</span>
-
-              <span class="wf-num-label" style="top:484px;">④</span>
-
           </div>
 
         </div><!-- /mockup-zone -->
@@ -1572,7 +1556,7 @@
                 <td class="item-name">카테고리 탭</td>
                 <td>
                   총 6개 탭: <b>전체</b>(기본 활성) / <b>건물공지</b> / <b>행사·이벤트</b> / <b>분실물</b> / <b>자유</b> / <b>구내식당</b><br>
-                  <b>구내식당</b> 탭: 구내식당 등록 건물(50.4%)에만 노출. 미등록 건물은 5개 탭만 표시.<br>
+                  <b>구내식당</b> 탭: 구내식당 서비스 미등록 건물은 5개 탭만 표시.<br>
                   탭 수 초과 시 가로 스크롤 허용. 탭 전환 시 해당 카테고리 피드로 필터링.
                 </td>
                 <td class="spec-note spec-cond">구내식당<br>조건부 노출</td>
@@ -1582,8 +1566,7 @@
                 <td class="item-name">피드 카드</td>
                 <td>
                   카드 구성: <b>[카테고리배지]</b> 게시글 제목 / 닉네임 · 시간 · 댓글수 · 조회수<br>
-                  분실물 카드: 카테고리배지 옆에 상태배지 추가 (<b>[찾는중]</b> / <b>[해결됨]</b>).<br>
-                  해결됨 카드는 피드 하단으로 이동 + 필요시 흐림 처리(55%). 기본 정렬: 최신순.
+                  
                 </td>
                 <td class="spec-note">최신순<br>정렬</td>
               </tr>
@@ -1601,8 +1584,8 @@
                 <td class="item-name">글쓰기 버튼<br>(글쓰기 버튼)</td>
                 <td>
                   우측 하단 글쓰기 버튼(+). 탭 × 권한별 노출 조건:<br>
-                  &bull; <b>건물공지 탭</b>: 일반 구성원 → <span style="color:var(--red); font-weight:600;">미노출</span> (건물 관리자·앱 관리자 노출)<br>
-                  &bull; <b>구내식당 탭</b>: 일반 구성원 → <span style="color:var(--red); font-weight:600;">미노출</span> (건물 관리자·앱 관리자 노출)<br>
+                  &bull; <b>건물공지 탭</b>: 일반 구성원 → <span style="color:var(--red); font-weight:600;">미노출</span> (건물 관리자만 글쓰기 노출)<br>
+                  &bull; <b>구내식당 탭</b>: 일반 구성원 → <span style="color:var(--red); font-weight:600;">미노출</span> (영양사만 글쓰기 노출)<br>
                   &bull; <b>행사·이벤트 / 분실물 / 자유 탭</b>: 전 권한 노출<br>
                   &bull; <b>전체 탭</b>: 전 권한 노출 (탭 후 카테고리 선택 모달 → 글쓰기 진행)
                 </td>
@@ -1736,9 +1719,7 @@
                 <div class="wf-bnav-item"><div class="wf-bnav-icon active"></div><span class="wf-bnav-label active" style="font-size:5.5px;">건물톡</span></div>
               </div>
             </div>
-          <span class="wf-num-label" style="top:96px;">①</span>
-          <span class="wf-num-label" style="top:290px;">②</span>
-          <span class="wf-num-label" style="top:484px;">③</span>
+          <span class="wf-num-label" style="top:270px;">①</span>
           </div>
 
           <!-- ─── S05: 로딩 중 (스켈레톤 UI) ─── -->
@@ -1794,7 +1775,7 @@
                 </div>
                 <!-- annotation -->
                 <div style="padding:8px 0;">
-                  <div class="wf-annotation">반짝임 로딩 효과 애니메이션 적용<br>(left→right gradient sweep)</div>
+                  <div class="wf-annotation">반짝임 로딩 효과 애니메이션 적용</div>
                 </div>
               </div>
               <!-- Bottom Nav -->
@@ -1806,9 +1787,8 @@
                 <div class="wf-bnav-item"><div class="wf-bnav-icon active"></div><span class="wf-bnav-label active" style="font-size:5.5px;">건물톡</span></div>
               </div>
             </div>
-          <span class="wf-num-label" style="top:96px;">①</span>
-          <span class="wf-num-label" style="top:290px;">②</span>
-          <span class="wf-num-label" style="top:484px;">③</span>
+          <span class="wf-num-label" style="top:100px;">③</span>
+          <span class="wf-num-label" style="top:150px;">②</span>
           </div>
 
         </div><!-- /mockup-zone -->
@@ -1829,7 +1809,7 @@
             </thead>
             <tbody>
               <tr>
-                <td rowspan="7">①</td>
+                <td>①</td>
                 <td class="item-name">Empty State<br>카테고리별<br>문구·CTA</td>
                 <td>
                   <table style="width:100%; border-collapse:collapse; font-size:10.5px;">
@@ -1880,7 +1860,7 @@
                   </table>
                   <div style="margin-top:5px; font-size:10.5px; color:var(--gray-md);">
                     CTA 없는 탭(건물공지·구내식당): 해당 권한(일반 구성원)이 작성할 수 없는 카테고리 — 버튼 미표시.<br>
-                    건물 관리자·앱 관리자은 모든 탭 Empty State에 CTA 표시.
+                    
                   </div>
                 </td>
                 <td class="spec-cond">권한별<br>CTA<br>조건부</td>
@@ -1889,9 +1869,9 @@
                 <td>②</td>
                 <td class="item-name">로딩<br>스켈레톤</td>
                 <td>
-                  <b>적용 시점</b>: 초기 진입(콜드 스타트) / 탭 전환 최초 1회 / 당겨서 새로고침 후 재로드 시.<br>
+                  <b>적용 시점</b>: 초기 진입 / 탭 전환 최초 1회 / 당겨서 새로고침 후 재로드 시.<br>
                   <b>구성 요소</b>: 카테고리 탭 영역 + 피드 카드 영역 모두 스켈레톤 블록으로 대체. 글쓰기 버튼 숨김.<br>
-                  <b>해제 조건</b>: 데이터 수신 완료 → 실제 피드로 교체 (fade-in 트랜지션 권장, 개발팀 협의).
+                  <b>해제 조건</b>: 데이터 수신 완료 → 실제 피드로 교체.
                 </td>
                 <td class="spec-note">반짝임 로딩 효과<br>애니메이션<br>개발 협의</td>
               </tr>
@@ -2027,7 +2007,7 @@
                   <div style="font-size:7px;color:var(--gray-md);margin-top:1px;">이샌디 · 1시간 전 · 댓글 12 · 조회 204</div>
                 </div>
                 <div style="border-bottom:1px solid var(--gray-lt);padding:5px 0;flex-shrink:0;">
-                  <div style="display:flex;align-items:center;gap:4px;margin-bottom:2px;"><span class="state-badge lost" style="font-size:6.5px;padding:1px 4px;">분실물</span><span class="state-badge looking" style="font-size:6.5px;padding:1px 4px;">찾는중</span></div>
+                  <div style="display:flex;align-items:center;gap:4px;margin-bottom:2px;"><span class="state-badge lost" style="font-size:6.5px;padding:1px 4px;">분실물</span></div>
                   <div style="font-size:8.5px;font-weight:600;color:var(--navy);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">1층 로비 검정 우산 찾아요</div>
                   <div style="font-size:7px;color:var(--gray-md);margin-top:1px;">박샌디 · 3시간 전 · 댓글 2 · 조회 89</div>
                 </div>
@@ -2048,15 +2028,7 @@
                 <div class="wf-bnav-item"><div class="wf-bnav-icon active"></div><span class="wf-bnav-label active" style="font-size:5.5px;">건물톡</span></div>
               </div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
-
-              <span class="wf-num-label" style="top:193px;">②</span>
-
-              <span class="wf-num-label" style="top:290px;">③</span>
-
-              <span class="wf-num-label" style="top:387px;">④</span>
-
-              <span class="wf-num-label" style="top:484px;">⑤</span>
+              <span class="wf-num-label" style="top:127px;">①</span>
 
           </div>
 
@@ -2111,7 +2083,7 @@
                   <div style="font-size:7px;color:var(--gray-md);margin-top:1px;">이샌디 · 1시간 전 · 댓글 12 · 조회 204</div>
                 </div>
                 <div style="border-bottom:1px solid var(--gray-lt);padding:5px 0;flex-shrink:0;">
-                  <div style="display:flex;align-items:center;gap:4px;margin-bottom:2px;"><span class="state-badge lost" style="font-size:6.5px;padding:1px 4px;">분실물</span><span class="state-badge looking" style="font-size:6.5px;padding:1px 4px;">찾는중</span></div>
+                  <div style="display:flex;align-items:center;gap:4px;margin-bottom:2px;"><span class="state-badge lost" style="font-size:6.5px;padding:1px 4px;">분실물</span></div>
                   <div style="font-size:8.5px;font-weight:600;color:var(--navy);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">1층 로비 검정 우산 찾아요</div>
                   <div style="font-size:7px;color:var(--gray-md);margin-top:1px;">박샌디 · 3시간 전 · 댓글 2 · 조회 89</div>
                 </div>
@@ -2132,15 +2104,7 @@
                 <div class="wf-bnav-item"><div class="wf-bnav-icon active"></div><span class="wf-bnav-label active" style="font-size:5.5px;">건물톡</span></div>
               </div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
-
-              <span class="wf-num-label" style="top:193px;">②</span>
-
-              <span class="wf-num-label" style="top:290px;">③</span>
-
-              <span class="wf-num-label" style="top:387px;">④</span>
-
-              <span class="wf-num-label" style="top:484px;">⑤</span>
+              <span class="wf-num-label" style="top:127px;">②</span>
 
           </div>
 
@@ -2192,7 +2156,7 @@
                   </div>
                 </div>
                 <!-- 자동 루프 annotation -->
-                <div class="wf-annotation" style="font-size:6.5px;">3건+ — 4초 간격 자동 루프 · 좌우 스와이프 수동 전환 · 수동 전환 시 타이머 리셋</div>
+                <div class="wf-annotation" style="font-size:6.5px;">3건+ — 4초 간격 자동 루프 · 좌우 스와이프 수동 전환</div>
                 <div style="border-bottom:1px solid var(--gray-lt);padding:5px 0;flex-shrink:0;">
                   <div style="display:flex;align-items:center;gap:4px;margin-bottom:2px;"><span class="state-badge event" style="font-size:6.5px;padding:1px 4px;">행사·이벤트</span></div>
                   <div style="font-size:8.5px;font-weight:600;color:var(--navy);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">5층 카페 오픈 기념 무료 음료 이벤트</div>
@@ -2215,15 +2179,11 @@
                 <div class="wf-bnav-item"><div class="wf-bnav-icon active"></div><span class="wf-bnav-label active" style="font-size:5.5px;">건물톡</span></div>
               </div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
+              <span class="wf-num-label" style="top:175px; left:-11px; right:auto;">④</span>
 
-              <span class="wf-num-label" style="top:193px;">②</span>
+              <span class="wf-num-label" style="top:66px; right:-33px;">⑤</span>
 
-              <span class="wf-num-label" style="top:290px;">③</span>
-
-              <span class="wf-num-label" style="top:387px;">④</span>
-
-              <span class="wf-num-label" style="top:484px;">⑤</span>
+              <span class="wf-num-label" style="top:127px;">③</span>
 
           </div>
 
@@ -2267,10 +2227,10 @@
                   건물공지가 <b>3건 이상</b>인 경우: <b>"n / N"</b> 카운터 + 도트 인디케이터 동시 노출.<br>
                   도트 최대 표시 3개<br>
                   <b>4초 간격 자동 스와이프 루프</b> (마지막 건 → 첫 번째 건 순환).<br>
-                  좌우 스와이프 수동 전환 가능. 수동 전환 시 <b>4초 타이머 리셋</b>.<br>
-                  카드 영역 탭 → 해당 게시글 상세 진입 (루프 타이머 별도 중지 처리 불필요).
+                  좌우 스와이프 수동 전환 가능.<br>
+                  카드 영역 탭 → 해당 게시글 상세 진입.
                 </td>
-                <td class="spec-cond">4초 자동<br>루프<br>스와이프<br>타이머 리셋</td>
+                <td class="spec-cond">4초 자동<br>루프<br>스와이프</td>
               </tr>
               <tr>
                 <td>④</td>
@@ -2285,7 +2245,7 @@
                 <td class="item-name">ticker 노출<br>범위</td>
                 <td>
                   핀카드(ticker)는 <b>전체 탭에서만 노출.</b><br>
-                  건물공지·행사·이벤트·분실물·자유·구내식당 탭 진입 시 미노출 (S03 정의 참조).
+                  건물공지·행사·이벤트·분실물·자유·구내식당 탭 진입 시 미노출. 최대 3개 자동 스와이프 (S03 정의 참조).
                 </td>
                 <td class="spec-note">전체 탭<br>전용</td>
               </tr>
@@ -2416,7 +2376,7 @@
                   <span style="font-size:7px; color:var(--gray-lt);">•</span>
                   <span style="font-size:7px; color:var(--red); font-weight:600;">신고하기</span>
                   <span style="font-size:7px; color:var(--gray-lt);">•</span>
-                  <span style="font-size:7px; color:var(--gray-md); display:flex; align-items:center; gap:2px;"><span style="font-size:10px;">🟡</span>공유</span>
+                  <span style="font-size:7px; color:var(--gray-md); display:flex; align-items:center; gap:2px;">공유</span>
                 </div>
                 <!-- 댓글 헤더 -->
                 <div style="padding:4px 10px; font-size:8px; font-weight:700; color:var(--navy); border-bottom:1px solid var(--gray-lt); flex-shrink:0;">
@@ -2448,17 +2408,11 @@
                 </div>
               </div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
+              <span class="wf-num-label" style="top:51px;">①</span>
 
-              <span class="wf-num-label" style="top:173px;">②</span>
+              <span class="wf-num-label" style="top:51px; left:-11px; right:auto;">⑤</span>
 
-              <span class="wf-num-label" style="top:251px;">③</span>
-
-              <span class="wf-num-label" style="top:328px;">④</span>
-
-              <span class="wf-num-label" style="top:406px;">⑤</span>
-
-              <span class="wf-num-label" style="top:484px;">⑥</span>
+              <span class="wf-num-label" style="top:176px;">②</span>
 
           </div>
 
@@ -2484,7 +2438,7 @@
                 <div style="padding:8px 10px; border-bottom:1px solid var(--gray-lt); flex-shrink:0;">
                   <div style="display:flex; align-items:center; gap:5px; margin-bottom:4px;">
                     <span class="state-badge lost" style="font-size:7px; padding:1px 5px;">분실물</span>
-                    <span class="state-badge looking" style="font-size:7px; padding:1px 5px;">찾는중</span>
+                    
                   </div>
                   <div style="font-size:11px; font-weight:800; color:var(--navy); line-height:1.4;">1층 로비 검정 우산 찾아요</div>
                   <div style="display:flex; align-items:center; gap:6px; margin-top:4px;">
@@ -2506,7 +2460,7 @@
                   <span style="font-size:7px; color:var(--gray-lt);">•</span>
                   <span style="font-size:7px; color:var(--red); font-weight:600;">신고하기</span>
                   <span style="font-size:7px; color:var(--gray-lt);">•</span>
-                  <span style="font-size:7px; color:var(--gray-md); display:flex; align-items:center; gap:2px;"><span style="font-size:10px;">🟡</span>공유</span>
+                  <span style="font-size:7px; color:var(--gray-md); display:flex; align-items:center; gap:2px;">공유</span>
                 </div>
                 <div style="flex:1; background:var(--gray-bg);"></div>
                 <!-- 댓글 입력 + 등록 버튼 -->
@@ -2524,18 +2478,6 @@
                 </div>
               </div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
-
-              <span class="wf-num-label" style="top:173px;">②</span>
-
-              <span class="wf-num-label" style="top:251px;">③</span>
-
-              <span class="wf-num-label" style="top:328px;">④</span>
-
-              <span class="wf-num-label" style="top:406px;">⑤</span>
-
-              <span class="wf-num-label" style="top:484px;">⑥</span>
-
           </div>
 
           <!-- S03: 건물공지 -->
@@ -2596,7 +2538,7 @@
                   <span style="font-size:7px; color:var(--gray-lt);">•</span>
                   <span style="font-size:7px; color:var(--gray-md);">조회 318</span>
                   <span style="font-size:7px; color:var(--gray-lt);">•</span>
-                  <span style="font-size:7px; color:var(--gray-md); display:flex; align-items:center; gap:2px;"><span style="font-size:10px;">🟡</span>공유</span>
+                  <span style="font-size:7px; color:var(--gray-md); display:flex; align-items:center; gap:2px;">공유</span>
                 </div>
                 <div style="flex:1; background:var(--gray-bg);"></div>
                 <div style="padding:5px 8px; border-top:1px solid var(--gray-lt); display:flex; gap:5px; align-items:center; flex-shrink:0;">
@@ -2605,17 +2547,9 @@
                 </div>
               </div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
+              <span class="wf-num-label" style="top:51px;">④</span>
 
-              <span class="wf-num-label" style="top:173px;">②</span>
-
-              <span class="wf-num-label" style="top:251px;">③</span>
-
-              <span class="wf-num-label" style="top:328px;">④</span>
-
-              <span class="wf-num-label" style="top:406px;">⑤</span>
-
-              <span class="wf-num-label" style="top:484px;">⑥</span>
+              <span class="wf-num-label" style="top:465px;">③</span>
 
           </div>
 
@@ -2653,7 +2587,7 @@
                 <td>
                   게시글 본문 바로 아래 가로 바 노출:<br>
                   <b>좌측</b>: ♥ 좋아요 아이콘 + 좋아요 수 (탭 시 토글).<br>
-                  <b>우측</b>: 댓글 수 • 조회 수 • <span style="color:var(--red);">신고하기</span> • <span style="color:var(--gray-md);">🟡공유하기</span> 순 나열.<br>
+                  <b>우측</b>: 댓글 수 • 조회 수 • <span style="color:var(--red);">신고하기</span> • <span style="color:var(--gray-md);">공유하기</span> 순 나열.<br>
                   <b>신고하기</b> 탭 시: 바텀시트 → " 신고하기 → 신고화면(01580U) 진입" (S02 이미지 참조).<br>
                   <b>공유하기</b>: 카카오톡 공유 연동.
                 </td>
@@ -2674,7 +2608,7 @@
                 <td class="item-name">건물공지<br>핀 배지 스타일</td>
                 <td>
                   헤더: 네이비 배경 + 흰색 텍스트 (일반 헤더와 시각 구분).<br>
-                  제목 상단: 📌 아이콘 + [공지] 배지 병기.
+                  제목 상단: [공지] 배지 병기.
                 </td>
                 <td>S03</td>
               </tr>
@@ -2687,16 +2621,6 @@
                   <b>검색 결과 → 상세</b>: 검색 결과 복귀 (검색어 유지).
                 </td>
                 <td>S01–S03</td>
-              </tr>
-              <tr>
-                <td>⑥</td>
-                <td class="item-name">분실물<br>해결됨 표시</td>
-                <td>
-                  분실물 게시글: 제목 옆 배지가 <b>[찾는중]</b>(주황) → <b>[해결됨]</b>(회색)으로 전환됨을 목록에서 표시.<br>
-                  단방향 전환 — 해결됨 → 찾는중 복구 불가.<br>
-                  <span style="color:var(--red);">버튼 별도 노출 없음</span> — 상태 변경은 글 수정(UFMDS01530U)을 통해 처리.
-                </td>
-                <td class="spec-note">분실물만<br>S04/S05</td>
               </tr>
             </tbody>
           </table>
@@ -2735,213 +2659,6 @@
 </div>
 
 <!-- ══════════════════════════════════════
-     SLIDE: UFMDS01510U 게시글 상세 (S04~S08)
-══════════════════════════════════════ -->
-<div class="slide" id="slide-UFMDS01510U-2">
-  <div class="slide-header">
-    <div class="breadcrumb">
-      <b>건물톡</b>
-      <span class="sep">›</span>
-      <span>게시글 상세</span>
-      <span class="sep">›</span>
-      <span style="color:rgba(255,255,255,0.5);">분실물 상태 (S04 · S05)</span>
-    </div>
-    <div class="slide-id">UFMDS01510U — 2/3</div>
-  </div>
-
-  <div class="slide-body">
-    <!-- Left Nav -->
-    <div class="slide-nav">
-      <div class="nav-section-label">화면 목록</div>
-      <a class="nav-item" href="#slide-UFMDS01500U"><div class="nav-num">1</div><div class="nav-text"><span class="nav-id">UFMDS01500U</span><span class="nav-name">건물톡 메인</span></div></a>
-      <a class="nav-item active" href="#slide-UFMDS01510U"><div class="nav-num">2</div><div class="nav-text"><span class="nav-id">UFMDS01510U</span><span class="nav-name">게시글 상세</span></div></a>
-      <a class="nav-item" href="#slide-UFMDS01520U"><div class="nav-num">3</div><div class="nav-text"><span class="nav-id">UFMDS01520U</span><span class="nav-name">글쓰기</span></div></a>
-      <a class="nav-item" href="#slide-UFMDS01530U"><div class="nav-num">4</div><div class="nav-text"><span class="nav-id">UFMDS01530U</span><span class="nav-name">글수정</span></div></a>
-      <a class="nav-item" href="#slide-UFMDS01540U"><div class="nav-num">5</div><div class="nav-text"><span class="nav-id">UFMDS01540U</span><span class="nav-name">Empty State</span></div></a>
-      <div class="nav-divider"></div>
-      <a class="nav-item" href="#slide-UFMDS01550U"><div class="nav-num">6</div><div class="nav-text"><span class="nav-id">UFMDS01550U</span><span class="nav-name">구내식당 메뉴 목록</span></div></a>
-      <a class="nav-item" href="#slide-UFMDS01560U"><div class="nav-num">7</div><div class="nav-text"><span class="nav-id">UFMDS01560U</span><span class="nav-name">구내식당 메뉴 상세</span></div></a>
-      <a class="nav-item" href="#slide-UFMDS01565U"><div class="nav-num">8</div><div class="nav-text"><span class="nav-id">UFMDS01565U</span><span class="nav-name">구내식당 메뉴 글쓰기</span></div></a>
-      <a class="nav-item" href="#slide-UFMDS01570U"><div class="nav-num">9</div><div class="nav-text"><span class="nav-id">UFMDS01570U</span><span class="nav-name">구내식당 리뷰 목록</span></div></a>
-      <div class="nav-divider"></div>
-      <a class="nav-item" href="#slide-UFMDS01580U"><div class="nav-num">10</div><div class="nav-text"><span class="nav-id">UFMDS01580U</span><span class="nav-name">신고하기</span></div></a>
-      <a class="nav-item" href="#slide-UFMDS01590U"><div class="nav-num">11</div><div class="nav-text"><span class="nav-id">UFMDS01590U</span><span class="nav-name">검색 결과</span></div></a>
-      <a class="nav-item" href="#slide-UFMDS01600U"><div class="nav-num">12</div><div class="nav-text"><span class="nav-id">UFMDS01600U</span><span class="nav-name">이용정책 전문</span></div></a>
-    </div>
-
-    <!-- Main -->
-    <div class="slide-main">
-      <!-- Screen meta -->
-      <div class="screen-meta">
-        <div class="meta-row">
-          <span class="meta-label">화면 ID</span>
-          <span class="meta-value code">UFMDS01510U</span>
-        </div>
-        <div class="meta-row">
-          <span class="meta-label">슬라이드</span>
-          <span class="meta-value">2 / 3</span>
-        </div>
-        <div class="meta-row">
-          <span class="meta-label">이 슬라이드</span>
-          <span class="meta-value" style="font-size:11px; line-height:1.6;">S04 분실물 찾는중<br>S05 분실물 해결됨</span>
-        </div>
-        <div class="meta-row">
-          <span class="meta-label">상태 변경</span>
-          <span class="meta-value" style="font-size:11px;">작성자만</span>
-        </div>
-        <div class="meta-row">
-          <span class="meta-label">우선순위</span>
-          <span class="meta-tag tag-p1">P1</span>
-        </div>
-      </div>
-
-      <!-- Content -->
-      <div class="screen-content">
-        <!-- 5 Wireframes (작게) -->
-        <div class="mockup-zone" style="gap:7px; align-items:flex-start; padding:8px 6px;">
-
-          <!-- S04: 분실물 찾는중 -->
-          <div class="mockup-block">
-            <span class="mockup-label tobe" style="font-size:8px;">S04 · 찾는중</span>
-            <div class="wireframe" style="width:140px; height:430px; font-size:8px;">
-              <div class="wf-status-bar" style="height:14px;">
-                <span class="wf-status-time" style="font-size:7px;">9:41</span>
-              </div>
-              <div class="wf-header" style="padding:5px 8px;">
-                <span class="wf-back" style="font-size:11px;">‹</span>
-                <span class="wf-header-title" style="font-size:9px; flex:1; text-align:center;">게시글</span>
-                <div style="display:flex; gap:5px;"><span style="font-size:7.5px; color:var(--blue);">수정</span><span style="font-size:7.5px; color:var(--red);">삭제</span></div>
-              </div>
-              <div style="flex:1; display:flex; flex-direction:column; overflow:hidden;">
-                <div style="padding:6px 8px; border-bottom:1px solid var(--gray-lt); flex-shrink:0;">
-                  <div style="display:flex; align-items:center; gap:3px; margin-bottom:3px; flex-wrap:wrap;">
-                    <span class="state-badge lost" style="font-size:6.5px; padding:1px 4px;">분실물</span>
-                    <span class="state-badge looking" style="font-size:6.5px; padding:1px 4px;">찾는중</span>
-                  </div>
-                  <div style="font-size:8.5px; font-weight:800; color:var(--navy); line-height:1.3;">1층 검정 우산 찾아요</div>
-                  <div style="font-size:7px; color:var(--gray-md); margin-top:2px;">이샌디 · 2시간 전</div>
-                </div>
-                <div style="padding:6px 8px; font-size:7.5px; color:var(--gray-dk); line-height:1.5; border-bottom:1px solid var(--gray-lt); flex-shrink:0;">
-                  인포메이션에 맡겼어요. 검정 장우산입니다.
-                </div>
-                <!-- 좋아요·신고·공유 바 -->
-                <div style="padding:4px 8px; border-bottom:1px solid var(--gray-lt); display:flex; align-items:center; flex-shrink:0; gap:5px;">
-                  <span style="font-size:11px; color:var(--brand);">♥</span>
-                  <span style="font-size:7px; color:var(--brand); margin-right:auto;">3</span>
-                  <span style="font-size:6.5px; color:var(--gray-md);">댓글 1</span>
-                  <span style="font-size:6.5px; color:var(--gray-lt);">•</span>
-                  <span style="font-size:6.5px; color:var(--red);">신고</span>
-                  <span style="font-size:6.5px; color:var(--gray-lt);">•</span>
-                  <span style="font-size:6.5px; color:var(--gray-md);">🟡공유</span>
-                </div>
-                <div style="flex:1; background:var(--gray-bg);"></div>
-                <div style="padding:4px 6px; border-top:1px solid var(--gray-lt); flex-shrink:0; display:flex; gap:4px;">
-                  <div style="flex:1; border:1px solid var(--gray-lt); border-radius:12px; padding:3px 6px; font-size:7px; color:var(--gray-md); background:var(--gray-bg);">댓글을 입력해주세요</div>
-                  <div style="background:var(--brand); border-radius:5px; padding:2px 6px; font-size:7px; font-weight:700; color:#fff; flex-shrink:0;">등록</div>
-                </div>
-              </div>
-            </div>
-              <span class="wf-num-label" style="top:81px;">①</span>
-              <span class="wf-num-label" style="top:424px;">②</span>
-
-
-
-          </div>
-
-          <!-- S05: 분실물 해결됨 -->
-          <div class="mockup-block">
-            <span class="mockup-label" style="font-size:8px;">S05 · 해결됨</span>
-            <div class="wireframe" style="width:140px; height:430px; font-size:8px;">
-              <div class="wf-status-bar" style="height:14px;">
-                <span class="wf-status-time" style="font-size:7px;">9:41</span>
-              </div>
-              <div class="wf-header" style="padding:5px 8px;">
-                <span class="wf-back" style="font-size:11px;">‹</span>
-                <span class="wf-header-title" style="font-size:9px; flex:1; text-align:center;">게시글</span>
-                <div style="display:flex; gap:5px;"><span style="font-size:7.5px; color:var(--blue);">수정</span><span style="font-size:7.5px; color:var(--red);">삭제</span></div>
-              </div>
-              <!-- 해결됨: 흐림 처리 -->
-              <div style="flex:1; display:flex; flex-direction:column; overflow:hidden; opacity:0.5;">
-                <div style="padding:6px 8px; border-bottom:1px solid var(--gray-lt); flex-shrink:0;">
-                  <div style="display:flex; align-items:center; gap:3px; margin-bottom:3px; flex-wrap:wrap;">
-                    <span class="state-badge lost" style="font-size:6.5px; padding:1px 4px;">분실물</span>
-                    <span class="state-badge resolved" style="font-size:6.5px; padding:1px 4px;">해결됨</span>
-                  </div>
-                  <div style="font-size:8.5px; font-weight:800; color:var(--gray-md); line-height:1.3;">1층 검정 우산 찾아요</div>
-                  <div style="font-size:7px; color:var(--gray-md); margin-top:2px;">이샌디 · 어제</div>
-                </div>
-                <div style="padding:6px 8px; font-size:7.5px; color:var(--gray-md); line-height:1.5; border-bottom:1px solid var(--gray-lt); flex-shrink:0;">
-                  인포메이션에 맡겼어요. 검정 장우산입니다.
-                </div>
-                <!-- 해결됨: 배지 회색 전환 + 흐림 처리 -->
-                <div style="margin:5px 8px; background:var(--gray-bg); border:1px solid var(--gray-lt); border-radius:6px; padding:4px 6px; font-size:7px; color:var(--gray-md); text-align:center; flex-shrink:0;">
-                  분실물 상태: 해결됨 (배지 회색 전환)
-                </div>
-                <div style="flex:1; background:var(--gray-bg);"></div>
-                <div style="padding:4px 6px; border-top:1px solid var(--gray-lt); flex-shrink:0; display:flex; gap:4px;">
-                  <div style="flex:1; border:1px solid var(--gray-lt); border-radius:12px; padding:3px 6px; font-size:7px; color:var(--gray-md); background:var(--gray-bg);">댓글을 입력해주세요</div>
-                  <div style="background:var(--gray-lt); border-radius:5px; padding:2px 6px; font-size:7px; font-weight:700; color:var(--gray-md); flex-shrink:0;">등록</div>
-                </div>
-              </div>
-            </div>
-              <span class="wf-num-label" style="top:81px;">①</span>
-              <span class="wf-num-label" style="top:424px;">②</span>
-
-
-
-          </div>
-
-        </div><!-- /mockup-zone -->
-
-        <!-- Spec zone -->
-        <div class="spec-zone">
-          <div class="spec-screen-title">게시글 상세 (S04–S05) — 분실물 상태</div>
-
-          <table class="spec-table">
-            <thead>
-              <tr>
-                <th style="width:24px;">No</th>
-                <th style="width:120px;">항목</th>
-                <th>명세</th>
-                <th style="width:64px;">상태</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>①</td>
-                <td class="item-name">분실물 배지<br>전환 조건</td>
-                <td>
-                  게시글 작성 직후 기본값: <code style="font-size:10px; background:var(--gray-bg); padding:1px 4px; border-radius:3px;">state-badge.looking</code> <b>[찾는중]</b> (주황).<br>
-                  작성자가 "해결됨으로 변경" 탭 후 확인 → <code style="font-size:10px; background:var(--gray-bg); padding:1px 4px; border-radius:3px;">state-badge.resolved</code> <b>[해결됨]</b> (회색)으로 전환.<br>
-                  전환은 단방향 — 해결됨 → 찾는중 복구 불가.
-                </td>
-                <td>S04/S05</td>
-              </tr>
-              <tr>
-                <td>②</td>
-                <td class="item-name">해결됨<br>상태 처리</td>
-                <td>
-                  분실물 게시글의 "해결됨" 처리는 <b>별도 버튼 없이 글 수정(UFMDS01530U)</b>을 통해 변경.<br>
-                  해결됨 전환 후 상세 화면: 배지 [찾는중](주황) → [해결됨](회색), 본문 영역 흐림 처리(50%).<br>
-                  목록 피드: 해당 카드 피드 하단 이동 + 흐림 처리(55%). 댓글 입력은 유지.
-                </td>
-                <td>S04/S05</td>
-              </tr>
-            </tbody>
-          </table>
-        </div><!-- /spec-zone -->
-
-      </div><!-- /screen-content -->
-    </div><!-- /slide-main -->
-  </div><!-- /slide-body -->
-
-  <div class="slide-footer">
-    <span class="footer-crumb">건물톡 화면정의서 <span class="sep">›</span> <b>게시글 상세</b></span>
-    <span class="footer-right">UFMDS01510U · SD2026-003 · V0.1</span>
-  </div>
-</div>
-
-<!-- ══════════════════════════════════════
      SLIDE: UFMDS01510U 게시글 상세 — S06·S07·S08
 ══════════════════════════════════════ -->
 <div class="slide" id="slide-UFMDS01510U-3">
@@ -2953,7 +2670,7 @@
       <span class="sep">›</span>
       <span style="color:rgba(255,255,255,0.5);">댓글 조건부 렌더링 (S06 · S07 · S08)</span>
     </div>
-    <div class="slide-id">UFMDS01510U — 3/3</div>
+    <div class="slide-id">UFMDS01510U — 2/2</div>
   </div>
 
   <div class="slide-body">
@@ -2986,7 +2703,7 @@
         </div>
         <div class="meta-row">
           <span class="meta-label">슬라이드</span>
-          <span class="meta-value">3 / 3</span>
+          <span class="meta-value">2 / 2</span>
         </div>
         <div class="meta-row">
           <span class="meta-label">이 슬라이드</span>
@@ -3048,7 +2765,7 @@
                 </div>
               </div>
             </div>
-              <span class="wf-num-label" style="top:252px;">④</span>
+              <span class="wf-num-label" style="top:200px;">④</span>
 
 
 
@@ -3087,7 +2804,6 @@
                 </div>
               </div>
             </div>
-              <span class="wf-num-label" style="top:252px;">④</span>
 
 
 
@@ -3127,7 +2843,6 @@
                 <div style="height:28px; background:var(--gray-bg); border-top:1px solid var(--gray-lt); flex-shrink:0;"></div>
               </div>
             </div>
-              <span class="wf-num-label" style="top:252px;">④</span>
 
 
 
@@ -3154,7 +2869,7 @@
                 <td class="item-name">댓글<br>조건부 렌더링</td>
                 <td>
                   <b>댓글 있음 (S06)</b>: 댓글 목록 + 하단 입력란.<br>
-                  <b>댓글 없음 (S07)</b>: "첫 댓글을 남겨보세요" 안내 + 입력란 placeholder <b>"첫 댓글 작성하기"</b> (핑크 강조).<br>
+                  <b>댓글 없음 (S07)</b>: "첫 댓글을 남겨보세요" 안내 + 입력란 placeholder <b>"첫 댓글 작성하기"</b> <br>
                   <b>댓글 미허용 (S08)</b>: "댓글이 허용되지 않은 게시글입니다." + 입력란 영역 자체 미노출
                 </td>
                 <td>S06–S08</td>
@@ -3162,36 +2877,6 @@
             </tbody>
           </table>
 
-          <!-- State transition callout -->
-          <div style="background:#E8F5E9; border:1.5px solid #A5D6A7; border-radius:8px; padding:10px 14px; display:flex; gap:10px; align-items:flex-start;">
-            <div style="font-size:14px; flex-shrink:0; margin-top:1px;">🔄</div>
-            <div style="font-size:11px; color:#2E7D32; line-height:1.65;">
-              <b style="font-size:12px; display:block; margin-bottom:4px;">분실물 상태 전환 흐름</b>
-              <div style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
-                <div style="background:#fff; border:1.5px solid #FFCC80; border-radius:8px; padding:5px 10px; text-align:center; font-size:11px;">
-                  <div style="font-size:10px; color:var(--orange); font-weight:700; margin-bottom:2px;">[찾는중]</div>
-                  <div style="font-size:9px; color:var(--gray-md);">S04 기본 상태</div>
-                </div>
-                <div style="font-size:11px; color:var(--gray-md); display:flex; flex-direction:column; align-items:center; gap:1px;">
-                  <span>작성자 "해결됨으로 변경" 탭</span>
-                  <span style="font-size:16px; line-height:1;">→</span>
-                  <span style="font-size:9px; color:var(--red);">역전환 불가</span>
-                </div>
-                <div style="background:#fff; border:1.5px solid var(--gray-lt); border-radius:8px; padding:5px 10px; text-align:center; font-size:11px;">
-                  <div style="font-size:10px; color:var(--gray-md); font-weight:700; margin-bottom:2px;">[해결됨]</div>
-                  <div style="font-size:9px; color:var(--gray-md);">S05 흐림 처리</div>
-                </div>
-                <div style="font-size:11px; color:var(--gray-md); display:flex; flex-direction:column; align-items:center; gap:1px;">
-                  <span>목록 피드 반영</span>
-                  <span style="font-size:16px; line-height:1;">→</span>
-                </div>
-                <div style="background:#fff; border:1.5px solid var(--gray-lt); border-radius:8px; padding:5px 10px; text-align:center; font-size:11px;">
-                  <div style="font-size:10px; color:var(--gray-md); font-weight:700; margin-bottom:2px;">피드 하단</div>
-                  <div style="font-size:9px; color:var(--gray-md);">흐림 처리(55%)</div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -3320,10 +3005,6 @@
               <!-- Disabled register btn -->
               <div class="wf-btn disabled" style="margin:0 10px 8px; border-radius:10px; padding:9px;">등록</div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
-              <span class="wf-num-label" style="top:225px;">②</span>
-              <span class="wf-num-label" style="top:354px;">③</span>
-              <span class="wf-num-label" style="top:484px;">④</span>
 
 
           </div>
@@ -3374,10 +3055,6 @@
               <!-- Active register btn -->
               <div class="wf-btn" style="margin:0 10px 8px; border-radius:10px; padding:9px;">등록</div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
-              <span class="wf-num-label" style="top:225px;">②</span>
-              <span class="wf-num-label" style="top:354px;">③</span>
-              <span class="wf-num-label" style="top:484px;">④</span>
 
 
           </div>
@@ -3430,10 +3107,10 @@
               <!-- Active register btn -->
               <div class="wf-btn" style="margin:0 10px 8px; border-radius:10px; padding:9px;">등록</div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
-              <span class="wf-num-label" style="top:225px;">②</span>
-              <span class="wf-num-label" style="top:354px;">③</span>
-              <span class="wf-num-label" style="top:484px;">④</span>
+              <span class="wf-num-label" style="top:100px;">①</span>
+              <span class="wf-num-label" style="top:220px;">②</span>
+              <span class="wf-num-label" style="top:330px;">③</span>
+              <span class="wf-num-label" style="top:420px;">④</span>
 
 
           </div>
@@ -3457,10 +3134,10 @@
                 <td>①</td>
                 <td class="item-name">카테고리<br>선택 UI</td>
                 <td>
-                  헤더 하단 첫 영역에 카테고리 칩(chip) 행 노출: <b>건물공지 / 행사·이벤트 / 분실물 / 자유</b>.<br>
+                  헤더 하단 첫 영역에 카테고리 칩(chip) 행 노출: <b>건물공지 / 행사·이벤트 / 분실물 / 자유 / 구내식당</b>.<br>
                   칩 미선택 상태(S01): 제목·내용 입력란 비활성, 이미지 첨부 비활성, <b>등록 버튼 disabled</b><br>
                   칩 선택 시: 해당 칩 강조, 입력란 활성화, 등록 버튼 활성화.<br>
-                  <b>건물공지 칩</b>: 일반 구성원에게는 칩 자체를 <b>미노출</b>. 해당 권한은 행사·이벤트·분실물·자유만 선택 가능.
+                  <b>건물공지 및  구내식당 칩</b>: 일반 구성원에게는 칩 자체를 <b>미노출</b>. 해당 권한은 행사·이벤트·분실물·자유만 선택 가능.
                 </td>
                 <td class="spec-cond">건물공지<br>칩 권한<br>조건부</td>
               </tr>
@@ -3654,10 +3331,6 @@
               </div>
               <div class="wf-btn disabled" style="margin:0 10px 8px;border-radius:10px;padding:9px;">등록</div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
-              <span class="wf-num-label" style="top:225px;">②</span>
-              <span class="wf-num-label" style="top:354px;">③</span>
-              <span class="wf-num-label" style="top:484px;">④</span>
 
 
           </div>
@@ -3715,10 +3388,6 @@
               </div>
               <div class="wf-btn" style="margin:0 10px 8px;border-radius:10px;padding:9px;">등록</div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
-              <span class="wf-num-label" style="top:225px;">②</span>
-              <span class="wf-num-label" style="top:354px;">③</span>
-              <span class="wf-num-label" style="top:484px;">④</span>
 
 
           </div>
@@ -3782,10 +3451,10 @@
               </div>
               <div class="wf-btn disabled" style="margin:0 10px 8px;border-radius:10px;padding:9px;">등록</div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
-              <span class="wf-num-label" style="top:225px;">②</span>
-              <span class="wf-num-label" style="top:354px;">③</span>
-              <span class="wf-num-label" style="top:484px;">④</span>
+              <span class="wf-num-label" style="top:100px;">①</span>
+              <span class="wf-num-label" style="top:220px;">②</span>
+              <span class="wf-num-label" style="top:330px;">③</span>
+              <span class="wf-num-label" style="top:420px;">④</span>
 
 
           </div>
@@ -4005,14 +3674,6 @@
               </div>
               <div class="wf-btn disabled" style="margin:0 10px 8px;border-radius:10px;padding:9px;">등록</div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
-
-              <span class="wf-num-label" style="top:225px;">②</span>
-
-              <span class="wf-num-label" style="top:354px;">③</span>
-
-              <span class="wf-num-label" style="top:484px;">④</span>
-
           </div>
 
           <!-- ─── S05: 이미지 첨부 후 (썸네일 목록 + 삭제 버튼) ─── -->
@@ -4048,7 +3709,7 @@
                 </div>
                 <div class="wf-divider"></div>
                 <!-- 제목 (입력됨) -->
-                <div class="wf-input active" style="font-size:7px;">[소지중] 에어팟 · 3팀 이샌디</div>
+                <div class="wf-input active" style="font-size:7px;">[소지중] 에어팟 · 3팀으로 오세요!</div>
                 <!-- 물건 이름 (입력됨) -->
                 <div style="font-size:7.5px;font-weight:700;color:var(--navy);">물건 이름 <span style="color:var(--red);">*</span></div>
                 <div class="wf-input active" style="font-size:7px;">에어팟</div>
@@ -4088,14 +3749,6 @@
               </div>
               <div class="wf-btn" style="margin:0 10px 8px;border-radius:10px;padding:9px;">등록</div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
-
-              <span class="wf-num-label" style="top:225px;">②</span>
-
-              <span class="wf-num-label" style="top:354px;">③</span>
-
-              <span class="wf-num-label" style="top:484px;">④</span>
-
           </div>
 
           <!-- ─── S06: 등록 완료 — 목록 복귀 + 신규 게시글 상단 노출 ─── -->
@@ -4130,7 +3783,6 @@
                 <div style="border:1.5px solid var(--purple);border-radius:7px;padding:5px 7px;background:var(--purple-lt);flex-shrink:0;">
                   <div style="display:flex;align-items:center;gap:3px;margin-bottom:2px;">
                     <span class="state-badge lost" style="font-size:6.5px;padding:1px 4px;">분실물</span>
-                    <span class="state-badge looking" style="font-size:6.5px;padding:1px 4px;">찾는중</span>
                     <span style="font-size:6.5px;color:var(--purple);font-weight:800;margin-left:3px;letter-spacing:0.5px;">NEW</span>
                   </div>
                   <div style="font-size:8.5px;font-weight:700;color:var(--navy);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">[소지중] 에어팟 · 3팀 이샌디</div>
@@ -4148,7 +3800,7 @@
                 <div style="border-bottom:1px solid var(--gray-lt);padding:5px 0;flex-shrink:0;">
                   <div style="display:flex;align-items:center;gap:4px;margin-bottom:2px;">
                     <span class="state-badge lost" style="font-size:6.5px;padding:1px 4px;">분실물</span>
-                    <span class="state-badge looking" style="font-size:6.5px;padding:1px 4px;">찾는중</span>
+                    
                   </div>
                   <div style="font-size:8.5px;font-weight:600;color:var(--navy);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">1층 로비 검정 우산 찾아요</div>
                   <div style="font-size:7px;color:var(--gray-md);margin-top:1px;">박샌디 · 3시간 전 · 댓글 2 · 조회 89</div>
@@ -4179,13 +3831,13 @@
               <!-- Toast (등록 완료) -->
               <div style="position:absolute;bottom:62px;left:10px;right:10px;background:rgba(26,26,46,0.88);color:#fff;border-radius:8px;padding:7px 12px;font-size:7.5px;font-weight:600;text-align:center;z-index:10;">게시글이 등록되었습니다.</div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
+              <span class="wf-num-label" style="top:100px;">①</span>
 
-              <span class="wf-num-label" style="top:225px;">②</span>
+              <span class="wf-num-label" style="top:220px;">②</span>
 
-              <span class="wf-num-label" style="top:354px;">③</span>
+              <span class="wf-num-label" style="top:330px;">③</span>
 
-              <span class="wf-num-label" style="top:484px;">④</span>
+              <span class="wf-num-label" style="top:420px;">④</span>
 
           </div>
 
@@ -4209,7 +3861,7 @@
                 <td class="item-name">케이스 C<br>소속 정보<br>필드</td>
                 <td>
                   습득 유형 <b>C (제가 가지고 있어요)</b> 선택 시 노출 필드 구성:<br>
-                  <b>제목 placeholder:</b> <i style="color:var(--gray-md);">[소지중] 물건 이름과 제 소속을 제목에 적어주세요</i><br>
+                  <b>제목 placeholder:</b> <i style="color:var(--gray-md);">[소지중] 습득 물건의 이름과 보관중인 장소를 제목에 적어주세요</i><br>
                   · <b>물건 이름</b> <span style="color:var(--red);">*</span> — placeholder: "분실물 이름을 입력해주세요 (예: 검정 우산, 에어팟)"<br>
                   · <b>소속 정보</b> <span style="color:var(--red);">*</span> — placeholder: "팀 또는 부서명을 입력해주세요 (예: 3팀, 총무팀)"<br>
                   · <b>설명</b> (선택) — placeholder: "물건 특징이나 전달 가능한 시간 등을 입력해주세요."<br>
@@ -4234,10 +3886,10 @@
                 <td class="item-name">등록 완료<br>목록 복귀<br>동작</td>
                 <td>
                   등록 버튼 탭 → 저장 성공 시:<br>
-                  1. 글쓰기 화면 닫힘 (화면 이동 기록 pop).<br>
+                  1. 글쓰기 화면 닫힘<br>
                   2. 건물톡 목록 화면으로 복귀, <b>신규 게시글이 목록 최상단(최신순)에 즉시 노출</b>.<br>
                   3. 하단 토스트: <b>"게시글이 등록되었습니다."</b> 2초 후 자동 소멸.<br>
-                  저장 실패 시: 에러 토스트 노출 후 글쓰기 화면 유지 (입력값·이미지 보존).
+                  저장 실패 시: "게시물 저장에 실패했습니다." 토스트 노출 후 글쓰기 화면 유지 (입력값·이미지 보존).
                 </td>
                 <td class="spec-note">성공: 복귀<br>+ 토스트<br>실패: 화면<br>유지</td>
               </tr>
@@ -4246,7 +3898,7 @@
                 <td class="item-name">개인정보<br>보호 원칙</td>
                 <td>
                   <b>A · B · C 세 케이스 모두</b> 연락처 입력 필드 미노출.<br>
-                  분실물 게시글에서의 연락자 연결은 <b>댓글로만 처리</b> — 직접 연락처 수집 금지.<br>
+                  분실물 게시글에서의 연락자 연결은 <b>연락처 없이 댓글로만 처리</b> — 직접 연락처 수집 금지.<br>
                   케이스 C는 소속 정보(팀·부서명)를 제공하여 오프라인 전달 경로를 지원하되, 개인 연락처는 폼에서 수집하지 않음.
                 </td>
                 <td class="spec-note">전 케이스<br>공통 적용<br>댓글로만<br>연락</td>
@@ -4388,15 +4040,15 @@
                 </div>
               </div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
+              <span class="wf-num-label" style="top:56px; left:-11px; right:auto;">④</span>
 
-              <span class="wf-num-label" style="top:193px;">②</span>
+              <span class="wf-num-label" style="top:56px;">③</span>
 
-              <span class="wf-num-label" style="top:290px;">③</span>
+              <span class="wf-num-label" style="top:89px;">②</span>
 
-              <span class="wf-num-label" style="top:387px;">④</span>
+              <span class="wf-num-label" style="top:134px;">①</span>
 
-              <span class="wf-num-label" style="top:484px;">⑤</span>
+              <span class="wf-num-label" style="top:390px;">⑤</span>
 
           </div>
 
@@ -4450,16 +4102,6 @@
                 </div>
               </div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
-
-              <span class="wf-num-label" style="top:193px;">②</span>
-
-              <span class="wf-num-label" style="top:290px;">③</span>
-
-              <span class="wf-num-label" style="top:387px;">④</span>
-
-              <span class="wf-num-label" style="top:484px;">⑤</span>
-
           </div>
 
         </div>
@@ -4511,7 +4153,7 @@
                 <td>④</td>
                 <td class="item-name">닫기(✕) 처리</td>
                 <td>
-                  헤더 좌측 ✕ 탭 시 수정 내용이 있으면 "작성 중인 내용이 있어요. 나가시겠어요?" Confirm 다이얼로그 표시.<br>
+                  헤더 좌측 ✕ 탭 시 수정 내용이 있으면 "작성 중인 내용이 있어요. 나가시겠어요?" Confirm 바텀시트.<br>
                   확인 → 01510U 복귀 (변경 내용 미저장) / 취소 → 수정 화면 유지.
                 </td>
                 <td class="spec-note">Confirm<br>다이얼로그</td>
@@ -4655,16 +4297,6 @@
                 <div class="wf-bnav-item"><div class="wf-bnav-icon active"></div><span class="wf-bnav-label active" style="font-size:5.5px;">건물톡</span></div>
               </div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
-
-              <span class="wf-num-label" style="top:193px;">②</span>
-
-              <span class="wf-num-label" style="top:290px;">③</span>
-
-              <span class="wf-num-label" style="top:387px;">④</span>
-
-              <span class="wf-num-label" style="top:484px;">⑤</span>
-
           </div>
 
           <!-- S02: 건물공지 탭 (CTA 없음) -->
@@ -4706,16 +4338,6 @@
                 <div class="wf-bnav-item"><div class="wf-bnav-icon active"></div><span class="wf-bnav-label active" style="font-size:5.5px;">건물톡</span></div>
               </div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
-
-              <span class="wf-num-label" style="top:193px;">②</span>
-
-              <span class="wf-num-label" style="top:290px;">③</span>
-
-              <span class="wf-num-label" style="top:387px;">④</span>
-
-              <span class="wf-num-label" style="top:484px;">⑤</span>
-
           </div>
 
           <!-- S03: 분실물 탭 -->
@@ -4758,15 +4380,15 @@
                 <div class="wf-bnav-item"><div class="wf-bnav-icon active"></div><span class="wf-bnav-label active" style="font-size:5.5px;">건물톡</span></div>
               </div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
+              <span class="wf-num-label" style="top:78px;">①</span>
 
-              <span class="wf-num-label" style="top:193px;">②</span>
+              <span class="wf-num-label" style="top:200px;">②</span>
 
-              <span class="wf-num-label" style="top:290px;">③</span>
+              <span class="wf-num-label" style="top:270px;">③</span>
 
-              <span class="wf-num-label" style="top:387px;">④</span>
+              <span class="wf-num-label" style="top:340px;">④</span>
 
-              <span class="wf-num-label" style="top:484px;">⑤</span>
+              <span class="wf-num-label" style="top:420px;">⑤</span>
 
           </div>
 
@@ -4831,14 +4453,7 @@
           </div>
 
           <!-- 아이콘 매핑 -->
-          <div style="background:var(--gray-bg); border-radius:8px; padding:10px 14px;">
-            <div style="font-size:11px; font-weight:700; color:var(--navy); margin-bottom:6px;">카테고리별 Empty State 아이콘</div>
-            <div style="display:flex; gap:16px; flex-wrap:wrap;">
-              <span style="font-size:11px; color:var(--gray-dk);">💬 전체</span>
-              <span style="font-size:11px; color:var(--gray-dk);">📢 건물공지</span>
-              <span style="font-size:11px; color:var(--gray-dk);">🎉 행사·이벤트</span>
-              <span style="font-size:11px; color:var(--gray-dk);">🔍 분실물</span>
-              <span style="font-size:11px; color:var(--gray-dk);"> 자유</span>
+          <div 
             </div>
           </div>
         </div>
@@ -4989,18 +4604,10 @@
                 <div style="flex:1; background:var(--gray-bg);"></div>
               </div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
-
-              <span class="wf-num-label" style="top:173px;">②</span>
-
-              <span class="wf-num-label" style="top:251px;">③</span>
-
-              <span class="wf-num-label" style="top:328px;">④</span>
-
-              <span class="wf-num-label" style="top:406px;">⑤</span>
-
-              <span class="wf-num-label" style="top:484px;">⑥</span>
-
+              <span class="wf-num-label" style="top:48px;">④</span>
+              <span class="wf-num-label" style="top:80px;">②</span>
+              <span class="wf-num-label" style="top:115px;">⑤</span>
+              <span class="wf-num-label" style="top:155px;">①</span>
           </div>
 
           <!-- S02: 복수 식당 -->
@@ -5061,18 +4668,7 @@
                 <div style="flex:1; background:var(--gray-bg);"></div>
               </div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
-
-              <span class="wf-num-label" style="top:173px;">②</span>
-
-              <span class="wf-num-label" style="top:251px;">③</span>
-
-              <span class="wf-num-label" style="top:328px;">④</span>
-
-              <span class="wf-num-label" style="top:406px;">⑤</span>
-
-              <span class="wf-num-label" style="top:484px;">⑥</span>
-
+              <span class="wf-num-label" style="top:95px;">③</span>
           </div>
 
           <!-- S05: Empty State -->
@@ -5110,18 +4706,7 @@
                 <div class="empty-state-desc" style="font-size:8px;">매니저가 오늘 식단을 등록하면<br>알림을 보내드려요.</div>
               </div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
-
-              <span class="wf-num-label" style="top:173px;">②</span>
-
-              <span class="wf-num-label" style="top:251px;">③</span>
-
-              <span class="wf-num-label" style="top:328px;">④</span>
-
-              <span class="wf-num-label" style="top:406px;">⑤</span>
-
-              <span class="wf-num-label" style="top:484px;">⑥</span>
-
+              <span class="wf-num-label" style="top:280px;">⑥</span>
           </div>
 
         </div><!-- /mockup-zone -->
@@ -5146,7 +4731,7 @@
                 <td>
                   건물톡 메인의 <b>구내식당 탭</b>은 해당 건물에 구내식당이 <b>1개 이상 등록된 경우에만</b> 노출.<br>
                   미등록 건물 → 탭 자체 미노출<br>
-                  탭 노출 여부는 건물 단위 설정값으로 제어 (서버 응답 기반).
+                  탭 노출 여부는 건물 단위 설정값으로 제어.
                 </td>
                 <td class="spec-note">조건부 노출</td>
               </tr>
@@ -5207,10 +4792,9 @@
           <div style="background:var(--orange-lt); border:1.5px solid #FFCC80; border-radius:8px; padding:10px 14px; display:flex; gap:10px; align-items:flex-start;">
             <div style="font-size:14px; flex-shrink:0; margin-top:1px;">🍽</div>
             <div style="font-size:11px; color:#5D4037; line-height:1.65;">
-              <b style="font-size:12px; display:block; margin-bottom:3px;">구내식당 탭 조건부 노출 — 전국 50.4% 건물</b>
-              sandi_recategory 기준 144개 건물(50.4%)에만 구내식당 서비스 적용.<br>
+              <b style="font-size:12px; display:block; margin-bottom:3px;">구내식당 탭 조건부 노출</b>
               미등록 건물의 건물톡 메인: 전체 · 건물공지 · 행사 · 분실물 · 자유 <b>5개 탭만 표시</b>.<br>
-              <span style="color:#E65100; font-weight:700;">댓글·별점 옵션(UFMDS01565U)은 글쓰기 시 건물 관리자가 게시글 단위로 설정 — 별도 건물 기본값 설정은 운영팀 협의 필요.</span>
+              <span style="color:#E65100; font-weight:700;">댓글·별점 옵션(UFMDS01565U)은 글쓰기 시 건물 관리자가 게시글 단위로 설정</span>
             </div>
           </div>
         </div>
@@ -5359,16 +4943,6 @@
                 </div>
               </div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
-
-              <span class="wf-num-label" style="top:193px;">②</span>
-
-              <span class="wf-num-label" style="top:290px;">③</span>
-
-              <span class="wf-num-label" style="top:387px;">④</span>
-
-              <span class="wf-num-label" style="top:484px;">⑤</span>
-
           </div>
 
           <!-- S02: 댓글 미허용 -->
@@ -5416,16 +4990,6 @@
                 <!-- 댓글 입력 미노출 → 여백만 -->
               </div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
-
-              <span class="wf-num-label" style="top:193px;">②</span>
-
-              <span class="wf-num-label" style="top:290px;">③</span>
-
-              <span class="wf-num-label" style="top:387px;">④</span>
-
-              <span class="wf-num-label" style="top:484px;">⑤</span>
-
           </div>
 
           <!-- S03: 별점 미허용 -->
@@ -5480,15 +5044,15 @@
                 </div>
               </div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
+              <span class="wf-num-label" style="top:50px;">④</span>
 
-              <span class="wf-num-label" style="top:193px;">②</span>
+              <span class="wf-num-label" style="top:130px;">⑤</span>
 
-              <span class="wf-num-label" style="top:290px;">③</span>
+              <span class="wf-num-label" style="top:200px;">③</span>
 
-              <span class="wf-num-label" style="top:387px;">④</span>
+              <span class="wf-num-label" style="top:270px;">①</span>
 
-              <span class="wf-num-label" style="top:484px;">⑤</span>
+              <span class="wf-num-label" style="top:350px;">②</span>
 
           </div>
 
@@ -5749,18 +5313,6 @@
                 </div>
               </div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
-
-              <span class="wf-num-label" style="top:173px;">②</span>
-
-              <span class="wf-num-label" style="top:251px;">③</span>
-
-              <span class="wf-num-label" style="top:328px;">④</span>
-
-              <span class="wf-num-label" style="top:406px;">⑤</span>
-
-              <span class="wf-num-label" style="top:484px;">⑥</span>
-
           </div>
 
           <!-- S02: 댓글 옵션 선택 -->
@@ -5831,18 +5383,6 @@
                 </div>
               </div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
-
-              <span class="wf-num-label" style="top:173px;">②</span>
-
-              <span class="wf-num-label" style="top:251px;">③</span>
-
-              <span class="wf-num-label" style="top:328px;">④</span>
-
-              <span class="wf-num-label" style="top:406px;">⑤</span>
-
-              <span class="wf-num-label" style="top:484px;">⑥</span>
-
           </div>
 
           <!-- S03: 별점 옵션 선택 -->
@@ -5911,17 +5451,17 @@
                 </div>
               </div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
+              <span class="wf-num-label" style="top:100px;">①</span>
 
-              <span class="wf-num-label" style="top:173px;">②</span>
+              <span class="wf-num-label" style="top:180px;">②</span>
 
-              <span class="wf-num-label" style="top:251px;">③</span>
+              <span class="wf-num-label" style="top:270px;">③</span>
 
-              <span class="wf-num-label" style="top:328px;">④</span>
+              <span class="wf-num-label" style="top:340px;">④</span>
 
-              <span class="wf-num-label" style="top:406px;">⑤</span>
+              <span class="wf-num-label" style="top:395px;">⑤</span>
 
-              <span class="wf-num-label" style="top:484px;">⑥</span>
+              <span class="wf-num-label" style="top:455px;">⑥</span>
 
           </div>
 
@@ -6191,17 +5731,15 @@
                 <div class="wf-btn">리뷰 작성하기</div>
               </div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
+              <span class="wf-num-label" style="top:160px;">①</span>
 
-              <span class="wf-num-label" style="top:173px;">②</span>
+              <span class="wf-num-label" style="top:220px;">④</span>
 
-              <span class="wf-num-label" style="top:251px;">③</span>
+              <span class="wf-num-label" style="top:270px;">③</span>
 
-              <span class="wf-num-label" style="top:328px;">④</span>
+              <span class="wf-num-label" style="top:310px;">⑥</span>
 
-              <span class="wf-num-label" style="top:406px;">⑤</span>
-
-              <span class="wf-num-label" style="top:484px;">⑥</span>
+              <span class="wf-num-label" style="top:420px;">②</span>
 
           </div>
 
@@ -6243,17 +5781,7 @@
                 <div class="wf-btn">리뷰 작성하기</div>
               </div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
-
-              <span class="wf-num-label" style="top:173px;">②</span>
-
-              <span class="wf-num-label" style="top:251px;">③</span>
-
-              <span class="wf-num-label" style="top:328px;">④</span>
-
-              <span class="wf-num-label" style="top:406px;">⑤</span>
-
-              <span class="wf-num-label" style="top:484px;">⑥</span>
+              <span class="wf-num-label" style="top:280px;">⑤</span>
 
           </div>
 
@@ -6487,17 +6015,13 @@
                 </div>
               </div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
+              <span class="wf-num-label" style="top:50px; left:-11px; right:auto;">⑤</span>
 
-              <span class="wf-num-label" style="top:173px;">②</span>
+              <span class="wf-num-label" style="top:130px;">①</span>
 
-              <span class="wf-num-label" style="top:251px;">③</span>
+              <span class="wf-num-label" style="top:270px;">④</span>
 
-              <span class="wf-num-label" style="top:328px;">④</span>
-
-              <span class="wf-num-label" style="top:406px;">⑤</span>
-
-              <span class="wf-num-label" style="top:484px;">⑥</span>
+              <span class="wf-num-label" style="top:420px;">②</span>
 
           </div>
 
@@ -6532,17 +6056,7 @@
                 </div>
               </div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
-
-              <span class="wf-num-label" style="top:173px;">②</span>
-
-              <span class="wf-num-label" style="top:251px;">③</span>
-
-              <span class="wf-num-label" style="top:328px;">④</span>
-
-              <span class="wf-num-label" style="top:406px;">⑤</span>
-
-              <span class="wf-num-label" style="top:484px;">⑥</span>
+              <span class="wf-num-label" style="top:270px;">③</span>
 
           </div>
 
@@ -6782,15 +6296,13 @@
                 <div style="flex:1; background:var(--gray-bg);"></div>
               </div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
+              <span class="wf-num-label" style="top:55px;">①</span>
 
-              <span class="wf-num-label" style="top:193px;">②</span>
+              <span class="wf-num-label" style="top:110px;">⑤</span>
 
-              <span class="wf-num-label" style="top:290px;">③</span>
+              <span class="wf-num-label" style="top:200px;">②</span>
 
-              <span class="wf-num-label" style="top:387px;">④</span>
-
-              <span class="wf-num-label" style="top:484px;">⑤</span>
+              <span class="wf-num-label" style="top:240px; right:-33px;">④</span>
 
           </div>
 
@@ -6828,15 +6340,7 @@
                 </div>
               </div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
-
-              <span class="wf-num-label" style="top:193px;">②</span>
-
-              <span class="wf-num-label" style="top:290px;">③</span>
-
-              <span class="wf-num-label" style="top:387px;">④</span>
-
-              <span class="wf-num-label" style="top:484px;">⑤</span>
+              <span class="wf-num-label" style="top:270px;">③</span>
 
           </div>
 
@@ -7056,15 +6560,15 @@
                 </div>
               </div>
             </div>
-              <span class="wf-num-label" style="top:96px;">①</span>
+              <span class="wf-num-label" style="top:52px; left:-11px; right:auto;">②</span>
 
-              <span class="wf-num-label" style="top:193px;">②</span>
+              <span class="wf-num-label" style="top:52px;">③</span>
 
-              <span class="wf-num-label" style="top:290px;">③</span>
+              <span class="wf-num-label" style="top:200px;">①</span>
 
-              <span class="wf-num-label" style="top:387px;">④</span>
+              <span class="wf-num-label" style="top:380px;">④</span>
 
-              <span class="wf-num-label" style="top:484px;">⑤</span>
+              <span class="wf-num-label" style="top:450px;">⑤</span>
 
           </div>
         </div>
